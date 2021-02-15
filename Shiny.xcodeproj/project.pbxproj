@@ -1,0 +1,410 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A0C462A25D2F8CE009C7FBC /* EditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C462925D2F8CE009C7FBC /* EditItemView.swift */; };
+		3A0C462C25D2FF68009C7FBC /* ItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C462B25D2FF68009C7FBC /* ItemRowView.swift */; };
+		3A0C462E25D301AD009C7FBC /* Binding-OnChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C462D25D301AD009C7FBC /* Binding-OnChange.swift */; };
+		3A3D471D25D98B8C00406D81 /* ProjectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3D471C25D98B8C00406D81 /* ProjectHeaderView.swift */; };
+		3A3D471F25D9A2BC00406D81 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A3D471E25D9A2BC00406D81 /* Colors.xcassets */; };
+		3A3D472125D9A37100406D81 /* EditProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3D472025D9A37100406D81 /* EditProjectView.swift */; };
+		3AB156D525D2A7840025CFFA /* ShinyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB156D425D2A7840025CFFA /* ShinyApp.swift */; };
+		3AB156D725D2A7840025CFFA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB156D625D2A7840025CFFA /* ContentView.swift */; };
+		3AB156D925D2A7850025CFFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AB156D825D2A7850025CFFA /* Assets.xcassets */; };
+		3AB156DC25D2A7850025CFFA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AB156DB25D2A7850025CFFA /* Preview Assets.xcassets */; };
+		3AB156E525D2AB7B0025CFFA /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3AB156E325D2AB7B0025CFFA /* Main.xcdatamodeld */; };
+		3AB156E725D2AE5F0025CFFA /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB156E625D2AE5F0025CFFA /* DataController.swift */; };
+		3AB156EB25D2B5EB0025CFFA /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB156EA25D2B5EB0025CFFA /* CloudKit.framework */; };
+		3AB156ED25D2B9DD0025CFFA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB156EC25D2B9DD0025CFFA /* HomeView.swift */; };
+		3AB156EF25D2BA6E0025CFFA /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB156EE25D2BA6E0025CFFA /* ProjectsView.swift */; };
+		3AB156F125D2E5B50025CFFA /* Item+CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB156F025D2E5B50025CFFA /* Item+CoreDataHelpers.swift */; };
+		3AB156F325D2E6030025CFFA /* Project+CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB156F225D2E6030025CFFA /* Project+CoreDataHelpers.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3A0C462925D2F8CE009C7FBC /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
+		3A0C462B25D2FF68009C7FBC /* ItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowView.swift; sourceTree = "<group>"; };
+		3A0C462D25D301AD009C7FBC /* Binding-OnChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding-OnChange.swift"; sourceTree = "<group>"; };
+		3A3D471C25D98B8C00406D81 /* ProjectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectHeaderView.swift; sourceTree = "<group>"; };
+		3A3D471E25D9A2BC00406D81 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		3A3D472025D9A37100406D81 /* EditProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectView.swift; sourceTree = "<group>"; };
+		3AB156D125D2A7840025CFFA /* Shiny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shiny.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AB156D425D2A7840025CFFA /* ShinyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShinyApp.swift; sourceTree = "<group>"; };
+		3AB156D625D2A7840025CFFA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3AB156D825D2A7850025CFFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3AB156DB25D2A7850025CFFA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3AB156DD25D2A7850025CFFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AB156E425D2AB7B0025CFFA /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
+		3AB156E625D2AE5F0025CFFA /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		3AB156E825D2B5D00025CFFA /* Shiny.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Shiny.entitlements; sourceTree = "<group>"; };
+		3AB156EA25D2B5EB0025CFFA /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		3AB156EC25D2B9DD0025CFFA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		3AB156EE25D2BA6E0025CFFA /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
+		3AB156F025D2E5B50025CFFA /* Item+CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataHelpers.swift"; sourceTree = "<group>"; };
+		3AB156F225D2E6030025CFFA /* Project+CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project+CoreDataHelpers.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3AB156CE25D2A7840025CFFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AB156EB25D2B5EB0025CFFA /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3AB156C825D2A7840025CFFA = {
+			isa = PBXGroup;
+			children = (
+				3AB156D325D2A7840025CFFA /* Shiny */,
+				3AB156D225D2A7840025CFFA /* Products */,
+				3AB156E925D2B5EB0025CFFA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3AB156D225D2A7840025CFFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AB156D125D2A7840025CFFA /* Shiny.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3AB156D325D2A7840025CFFA /* Shiny */ = {
+			isa = PBXGroup;
+			children = (
+				3AB156E825D2B5D00025CFFA /* Shiny.entitlements */,
+				3AB156D425D2A7840025CFFA /* ShinyApp.swift */,
+				3AB156EC25D2B9DD0025CFFA /* HomeView.swift */,
+				3AB156EE25D2BA6E0025CFFA /* ProjectsView.swift */,
+				3A0C462D25D301AD009C7FBC /* Binding-OnChange.swift */,
+				3A0C462B25D2FF68009C7FBC /* ItemRowView.swift */,
+				3AB156D625D2A7840025CFFA /* ContentView.swift */,
+				3A0C462925D2F8CE009C7FBC /* EditItemView.swift */,
+				3A3D472025D9A37100406D81 /* EditProjectView.swift */,
+				3A3D471C25D98B8C00406D81 /* ProjectHeaderView.swift */,
+				3AB156E325D2AB7B0025CFFA /* Main.xcdatamodeld */,
+				3AB156E625D2AE5F0025CFFA /* DataController.swift */,
+				3AB156F025D2E5B50025CFFA /* Item+CoreDataHelpers.swift */,
+				3AB156F225D2E6030025CFFA /* Project+CoreDataHelpers.swift */,
+				3A3D471E25D9A2BC00406D81 /* Colors.xcassets */,
+				3AB156D825D2A7850025CFFA /* Assets.xcassets */,
+				3AB156DD25D2A7850025CFFA /* Info.plist */,
+				3AB156DA25D2A7850025CFFA /* Preview Content */,
+			);
+			path = Shiny;
+			sourceTree = "<group>";
+		};
+		3AB156DA25D2A7850025CFFA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3AB156DB25D2A7850025CFFA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3AB156E925D2B5EB0025CFFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3AB156EA25D2B5EB0025CFFA /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3AB156D025D2A7840025CFFA /* Shiny */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AB156E025D2A7850025CFFA /* Build configuration list for PBXNativeTarget "Shiny" */;
+			buildPhases = (
+				3AB156CD25D2A7840025CFFA /* Sources */,
+				3AB156CE25D2A7840025CFFA /* Frameworks */,
+				3AB156CF25D2A7840025CFFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shiny;
+			productName = Shiny;
+			productReference = 3AB156D125D2A7840025CFFA /* Shiny.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3AB156C925D2A7840025CFFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					3AB156D025D2A7840025CFFA = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 3AB156CC25D2A7840025CFFA /* Build configuration list for PBXProject "Shiny" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3AB156C825D2A7840025CFFA;
+			productRefGroup = 3AB156D225D2A7840025CFFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3AB156D025D2A7840025CFFA /* Shiny */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3AB156CF25D2A7840025CFFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A3D471F25D9A2BC00406D81 /* Colors.xcassets in Resources */,
+				3AB156DC25D2A7850025CFFA /* Preview Assets.xcassets in Resources */,
+				3AB156D925D2A7850025CFFA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3AB156CD25D2A7840025CFFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AB156F325D2E6030025CFFA /* Project+CoreDataHelpers.swift in Sources */,
+				3A3D471D25D98B8C00406D81 /* ProjectHeaderView.swift in Sources */,
+				3AB156EF25D2BA6E0025CFFA /* ProjectsView.swift in Sources */,
+				3AB156E525D2AB7B0025CFFA /* Main.xcdatamodeld in Sources */,
+				3A3D472125D9A37100406D81 /* EditProjectView.swift in Sources */,
+				3AB156E725D2AE5F0025CFFA /* DataController.swift in Sources */,
+				3A0C462C25D2FF68009C7FBC /* ItemRowView.swift in Sources */,
+				3AB156D725D2A7840025CFFA /* ContentView.swift in Sources */,
+				3A0C462E25D301AD009C7FBC /* Binding-OnChange.swift in Sources */,
+				3AB156ED25D2B9DD0025CFFA /* HomeView.swift in Sources */,
+				3AB156D525D2A7840025CFFA /* ShinyApp.swift in Sources */,
+				3AB156F125D2E5B50025CFFA /* Item+CoreDataHelpers.swift in Sources */,
+				3A0C462A25D2F8CE009C7FBC /* EditItemView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3AB156DE25D2A7850025CFFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3AB156DF25D2A7850025CFFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3AB156E125D2A7850025CFFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Shiny/Shiny.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Shiny/Preview Content\"";
+				DEVELOPMENT_TEAM = 358V8FBM3U;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Shiny/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.antonnovoselov.Shiny;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3AB156E225D2A7850025CFFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Shiny/Shiny.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Shiny/Preview Content\"";
+				DEVELOPMENT_TEAM = 358V8FBM3U;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Shiny/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.antonnovoselov.Shiny;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3AB156CC25D2A7840025CFFA /* Build configuration list for PBXProject "Shiny" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AB156DE25D2A7850025CFFA /* Debug */,
+				3AB156DF25D2A7850025CFFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AB156E025D2A7850025CFFA /* Build configuration list for PBXNativeTarget "Shiny" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AB156E125D2A7850025CFFA /* Debug */,
+				3AB156E225D2A7850025CFFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3AB156E325D2AB7B0025CFFA /* Main.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3AB156E425D2AB7B0025CFFA /* Main.xcdatamodel */,
+			);
+			currentVersion = 3AB156E425D2AB7B0025CFFA /* Main.xcdatamodel */;
+			path = Main.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3AB156C925D2A7840025CFFA /* Project object */;
+}
