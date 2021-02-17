@@ -7,7 +7,11 @@
 
 import Foundation
 
+
 extension Item {
+    enum SortOrder {
+        case optimized, title, creationDate
+    }
     
     static var example: Item {
         let controller = DataController(inMemory: true)
