@@ -13,7 +13,7 @@ struct ProjectsView: View {
     
     @State private var showingSortOrder = false
     @State private var sortOrder = Item.SortOrder.optimized
-
+    
     
     let showClosedProjects: Bool
     let projects: FetchRequest<Project>
@@ -32,38 +32,47 @@ struct ProjectsView: View {
     
     var body: some View {
         NavigationView {
-            List {
-                ForEach(projects.wrappedValue) { project in
-                    Section(header: ProjectHeaderView(project: project)) {
-                        ForEach(project.projectItems(using: self.sortOrder), content: ItemRowView.init)
-                            .onDelete { offsets in
-                                let allItems = project.projectItems
-                                
-                                for offset in offsets {
-                                    let item = allItems[offset]
-                                    dataController.delete(item)
+            Group {
+                if projects.wrappedValue.count == 0 {
+                    Text("There's nothing here right now")
+                        .foregroundColor(.secondary)
+                } else {
+                    List {
+                        ForEach(projects.wrappedValue) { project in
+                            Section(header: ProjectHeaderView(project: project)) {
+                                ForEach(project.projectItems(using: sortOrder)) { item in
+                                    ItemRowView(project: project, item: item)
                                 }
-                                
-                                dataController.save()
-                            }
-                        
-                        if showClosedProjects == false {
-                            Button {
-                                withAnimation {
-                                    let item = Item(context: managedObjectContext)
-                                    item.project = project
-                                    item.creationDate = Date()
+                                .onDelete { offsets in
+                                    let allItems = project.projectItems(using: sortOrder)
+                                    
+                                    for offset in offsets {
+                                        let item = allItems[offset]
+                                        dataController.delete(item)
+                                    }
+                                    
                                     dataController.save()
                                 }
-                            } label: {
-                                Label("Add New Item", systemImage: "plus")
+                                
+                                if showClosedProjects == false {
+                                    Button {
+                                        withAnimation {
+                                            let item = Item(context: managedObjectContext)
+                                            item.project = project
+                                            item.creationDate = Date()
+                                            dataController.save()
+                                        }
+                                    } label: {
+                                        Label("Add New Item", systemImage: "plus")
+                                    }
+                                }
+                                
                             }
                         }
-                        
                     }
+                    .listStyle(InsetGroupedListStyle())
                 }
             }
-            .listStyle(InsetGroupedListStyle())
             .navigationTitle(showClosedProjects ? "Closed Projects" : "Open Projects")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
@@ -80,7 +89,7 @@ struct ProjectsView: View {
                         }
                     }
                 }
-
+                
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button {
                         showingSortOrder.toggle()
@@ -96,6 +105,9 @@ struct ProjectsView: View {
                     .default(Text("Title")) { sortOrder = .title }
                 ])
             }
+            
+            SelectSomethingView()
+            
         }
         
         
