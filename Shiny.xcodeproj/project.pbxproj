@@ -18,6 +18,7 @@
 		3A3D471D25D98B8C00406D81 /* ProjectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3D471C25D98B8C00406D81 /* ProjectHeaderView.swift */; };
 		3A3D471F25D9A2BC00406D81 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A3D471E25D9A2BC00406D81 /* Colors.xcassets */; };
 		3A3D472125D9A37100406D81 /* EditProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3D472025D9A37100406D81 /* EditProjectView.swift */; };
+		3A8585AC25E2F3CC004E901A /* Color+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8585AB25E2F3CC004E901A /* Color+Additions.swift */; };
 		3AB156D525D2A7840025CFFA /* ShinyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB156D425D2A7840025CFFA /* ShinyApp.swift */; };
 		3AB156D725D2A7840025CFFA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB156D625D2A7840025CFFA /* ContentView.swift */; };
 		3AB156D925D2A7850025CFFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AB156D825D2A7850025CFFA /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 		3A3D471C25D98B8C00406D81 /* ProjectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectHeaderView.swift; sourceTree = "<group>"; };
 		3A3D471E25D9A2BC00406D81 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		3A3D472025D9A37100406D81 /* EditProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectView.swift; sourceTree = "<group>"; };
+		3A8585AB25E2F3CC004E901A /* Color+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Additions.swift"; sourceTree = "<group>"; };
 		3AB156D125D2A7840025CFFA /* Shiny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shiny.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AB156D425D2A7840025CFFA /* ShinyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShinyApp.swift; sourceTree = "<group>"; };
 		3AB156D625D2A7840025CFFA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				3AB156D625D2A7840025CFFA /* ContentView.swift */,
 				3A1F265B25DF9EA0000B2842 /* Award.swift */,
 				3A1F265D25DF9EE6000B2842 /* AwardsView.swift */,
+				3A8585AB25E2F3CC004E901A /* Color+Additions.swift */,
 				3AB156D425D2A7840025CFFA /* ShinyApp.swift */,
 				3AB156EC25D2B9DD0025CFFA /* HomeView.swift */,
 				3AB156EE25D2BA6E0025CFFA /* ProjectsView.swift */,
@@ -212,6 +215,7 @@
 				3A1F265625DF9D30000B2842 /* SelectSomethingView.swift in Sources */,
 				3A1F265C25DF9EA0000B2842 /* Award.swift in Sources */,
 				3A1F265E25DF9EE6000B2842 /* AwardsView.swift in Sources */,
+				3A8585AC25E2F3CC004E901A /* Color+Additions.swift in Sources */,
 				3AB156E525D2AB7B0025CFFA /* Main.xcdatamodeld in Sources */,
 				3A3D472125D9A37100406D81 /* EditProjectView.swift in Sources */,
 				3AB156E725D2AE5F0025CFFA /* DataController.swift in Sources */,
