@@ -30,7 +30,7 @@ struct HomeView: View {
         items = FetchRequest(fetchRequest: request)
     }
     
-    @ViewBuilder func list(_ title: String,
+    @ViewBuilder func list(_ title: LocalizedStringKey,
                            for items: FetchedResults<Item>.SubSequence) -> some View {
         if items.isEmpty {
             EmptyView()
