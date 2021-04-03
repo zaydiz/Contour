@@ -17,6 +17,8 @@
 		3A1F265825DF9DE3000B2842 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1F265725DF9DE3000B2842 /* Bundle-Decodable.swift */; };
 		3A1F265C25DF9EA0000B2842 /* Award.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1F265B25DF9EA0000B2842 /* Award.swift */; };
 		3A1F265E25DF9EE6000B2842 /* AwardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1F265D25DF9EE6000B2842 /* AwardsView.swift */; };
+		3A202E022618CFEE00CE92D4 /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A202E012618CFEE00CE92D4 /* ItemListView.swift */; };
+		3A202E042618D08000CE92D4 /* ProjectSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A202E032618D08000CE92D4 /* ProjectSummaryView.swift */; };
 		3A3D471D25D98B8C00406D81 /* ProjectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3D471C25D98B8C00406D81 /* ProjectHeaderView.swift */; };
 		3A3D471F25D9A2BC00406D81 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A3D471E25D9A2BC00406D81 /* Colors.xcassets */; };
 		3A3D472125D9A37100406D81 /* EditProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3D472025D9A37100406D81 /* EditProjectView.swift */; };
@@ -48,6 +50,8 @@
 		3A1F265725DF9DE3000B2842 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 		3A1F265B25DF9EA0000B2842 /* Award.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Award.swift; sourceTree = "<group>"; };
 		3A1F265D25DF9EE6000B2842 /* AwardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsView.swift; sourceTree = "<group>"; };
+		3A202E012618CFEE00CE92D4 /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
+		3A202E032618D08000CE92D4 /* ProjectSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSummaryView.swift; sourceTree = "<group>"; };
 		3A3D471C25D98B8C00406D81 /* ProjectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectHeaderView.swift; sourceTree = "<group>"; };
 		3A3D471E25D9A2BC00406D81 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		3A3D472025D9A37100406D81 /* EditProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectView.swift; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 				3A8585AB25E2F3CC004E901A /* Color+Additions.swift */,
 				3AB156D425D2A7840025CFFA /* ShinyApp.swift */,
 				3AB156EC25D2B9DD0025CFFA /* HomeView.swift */,
+				3A202E032618D08000CE92D4 /* ProjectSummaryView.swift */,
+				3A202E012618CFEE00CE92D4 /* ItemListView.swift */,
 				3AB156EE25D2BA6E0025CFFA /* ProjectsView.swift */,
 				3A1F265525DF9D30000B2842 /* SelectSomethingView.swift */,
 				3A1F265725DF9DE3000B2842 /* Bundle-Decodable.swift */,
@@ -225,11 +231,13 @@
 				3A1F265825DF9DE3000B2842 /* Bundle-Decodable.swift in Sources */,
 				3AB156EF25D2BA6E0025CFFA /* ProjectsView.swift in Sources */,
 				3A1F265625DF9D30000B2842 /* SelectSomethingView.swift in Sources */,
+				3A202E022618CFEE00CE92D4 /* ItemListView.swift in Sources */,
 				3A1F265C25DF9EA0000B2842 /* Award.swift in Sources */,
 				3A1F265E25DF9EE6000B2842 /* AwardsView.swift in Sources */,
 				3A8585AC25E2F3CC004E901A /* Color+Additions.swift in Sources */,
 				3AB156E525D2AB7B0025CFFA /* Main.xcdatamodeld in Sources */,
 				3A3D472125D9A37100406D81 /* EditProjectView.swift in Sources */,
+				3A202E042618D08000CE92D4 /* ProjectSummaryView.swift in Sources */,
 				3AB156E725D2AE5F0025CFFA /* DataController.swift in Sources */,
 				3A0C462C25D2FF68009C7FBC /* ItemRowView.swift in Sources */,
 				3AB156D725D2A7840025CFFA /* ContentView.swift in Sources */,
