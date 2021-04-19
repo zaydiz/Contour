@@ -105,29 +105,13 @@
 			isa = PBXGroup;
 			children = (
 				3AB156E825D2B5D00025CFFA /* Shiny.entitlements */,
-				3A1ABEA825E8047500441C68 /* Awards.json */,
-				3AB156E325D2AB7B0025CFFA /* Main.xcdatamodeld */,
-				3AB156D625D2A7840025CFFA /* ContentView.swift */,
-				3A1F265B25DF9EA0000B2842 /* Award.swift */,
-				3A1F265D25DF9EE6000B2842 /* AwardsView.swift */,
-				3A8585AB25E2F3CC004E901A /* Color+Additions.swift */,
 				3AB156D425D2A7840025CFFA /* ShinyApp.swift */,
-				3AB156EC25D2B9DD0025CFFA /* HomeView.swift */,
-				3A202E032618D08000CE92D4 /* ProjectSummaryView.swift */,
-				3A202E012618CFEE00CE92D4 /* ItemListView.swift */,
-				3AB156EE25D2BA6E0025CFFA /* ProjectsView.swift */,
-				3A1F265525DF9D30000B2842 /* SelectSomethingView.swift */,
-				3A1F265725DF9DE3000B2842 /* Bundle-Decodable.swift */,
-				3A0C462D25D301AD009C7FBC /* Binding-OnChange.swift */,
-				3A0C462B25D2FF68009C7FBC /* ItemRowView.swift */,
-				3A0C462925D2F8CE009C7FBC /* EditItemView.swift */,
-				3A3D472025D9A37100406D81 /* EditProjectView.swift */,
-				3A3D471C25D98B8C00406D81 /* ProjectHeaderView.swift */,
-				3AB156E625D2AE5F0025CFFA /* DataController.swift */,
+				3AB5BA4F262DB03B009DF450 /* View */,
+				3AB5BA4E262DB02E009DF450 /* Model */,
+				3AB5BA4C262DAFB1009DF450 /* Helpers */,
+				3AB5BA4D262DAFF1009DF450 /* CoreData */,
 				3A1ABEA025E8006F00441C68 /* Localizable.strings */,
 				3A1ABEA425E8011800441C68 /* Localizable.stringsdict */,
-				3AB156F025D2E5B50025CFFA /* Item+CoreDataHelpers.swift */,
-				3AB156F225D2E6030025CFFA /* Project+CoreDataHelpers.swift */,
 				3A3D471E25D9A2BC00406D81 /* Colors.xcassets */,
 				3AB156D825D2A7850025CFFA /* Assets.xcassets */,
 				3AB156DD25D2A7850025CFFA /* Info.plist */,
@@ -150,6 +134,54 @@
 				3AB156EA25D2B5EB0025CFFA /* CloudKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3AB5BA4C262DAFB1009DF450 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3A1F265725DF9DE3000B2842 /* Bundle-Decodable.swift */,
+				3A0C462D25D301AD009C7FBC /* Binding-OnChange.swift */,
+				3A8585AB25E2F3CC004E901A /* Color+Additions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3AB5BA4D262DAFF1009DF450 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				3AB156E625D2AE5F0025CFFA /* DataController.swift */,
+				3AB156E325D2AB7B0025CFFA /* Main.xcdatamodeld */,
+				3AB156F025D2E5B50025CFFA /* Item+CoreDataHelpers.swift */,
+				3AB156F225D2E6030025CFFA /* Project+CoreDataHelpers.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		3AB5BA4E262DB02E009DF450 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3A1ABEA825E8047500441C68 /* Awards.json */,
+				3A1F265B25DF9EA0000B2842 /* Award.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3AB5BA4F262DB03B009DF450 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3AB156D625D2A7840025CFFA /* ContentView.swift */,
+				3A1F265D25DF9EE6000B2842 /* AwardsView.swift */,
+				3AB156EC25D2B9DD0025CFFA /* HomeView.swift */,
+				3A202E032618D08000CE92D4 /* ProjectSummaryView.swift */,
+				3A202E012618CFEE00CE92D4 /* ItemListView.swift */,
+				3AB156EE25D2BA6E0025CFFA /* ProjectsView.swift */,
+				3A1F265525DF9D30000B2842 /* SelectSomethingView.swift */,
+				3A0C462B25D2FF68009C7FBC /* ItemRowView.swift */,
+				3A0C462925D2F8CE009C7FBC /* EditItemView.swift */,
+				3A3D472025D9A37100406D81 /* EditProjectView.swift */,
+				3A3D471C25D98B8C00406D81 /* ProjectHeaderView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
