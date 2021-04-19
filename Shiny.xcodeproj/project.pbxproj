@@ -106,8 +106,8 @@
 			children = (
 				3AB156E825D2B5D00025CFFA /* Shiny.entitlements */,
 				3AB156D425D2A7840025CFFA /* ShinyApp.swift */,
-				3AB5BA4F262DB03B009DF450 /* View */,
-				3AB5BA4E262DB02E009DF450 /* Model */,
+				3AB5BA4F262DB03B009DF450 /* Activities */,
+				3AB5BA4D262DAFF1009DF450 /* CoreData */,
 				3AB5BA4C262DAFB1009DF450 /* Helpers */,
 				3A1ABEA025E8006F00441C68 /* Localizable.strings */,
 				3A1ABEA425E8011800441C68 /* Localizable.stringsdict */,
@@ -156,24 +156,30 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
-		3AB5BA4E262DB02E009DF450 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				3A1ABEA825E8047500441C68 /* Awards.json */,
-				3A1F265B25DF9EA0000B2842 /* Award.swift */,
-				3AB5BA4D262DAFF1009DF450 /* CoreData */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		3AB5BA4F262DB03B009DF450 /* View */ = {
+		3AB5BA4F262DB03B009DF450 /* Activities */ = {
 			isa = PBXGroup;
 			children = (
 				3AB156D625D2A7840025CFFA /* ContentView.swift */,
-				3A1F265D25DF9EE6000B2842 /* AwardsView.swift */,
+				3AB5BA52262E0109009DF450 /* Home */,
+				3AB5BA53262E0112009DF450 /* Projects */,
+				3AB5BA54262E0117009DF450 /* Awards */,
+			);
+			path = Activities;
+			sourceTree = "<group>";
+		};
+		3AB5BA52262E0109009DF450 /* Home */ = {
+			isa = PBXGroup;
+			children = (
 				3AB156EC25D2B9DD0025CFFA /* HomeView.swift */,
 				3A202E032618D08000CE92D4 /* ProjectSummaryView.swift */,
 				3A202E012618CFEE00CE92D4 /* ItemListView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3AB5BA53262E0112009DF450 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
 				3AB156EE25D2BA6E0025CFFA /* ProjectsView.swift */,
 				3A1F265525DF9D30000B2842 /* SelectSomethingView.swift */,
 				3A0C462B25D2FF68009C7FBC /* ItemRowView.swift */,
@@ -181,7 +187,17 @@
 				3A3D472025D9A37100406D81 /* EditProjectView.swift */,
 				3A3D471C25D98B8C00406D81 /* ProjectHeaderView.swift */,
 			);
-			path = View;
+			path = Projects;
+			sourceTree = "<group>";
+		};
+		3AB5BA54262E0117009DF450 /* Awards */ = {
+			isa = PBXGroup;
+			children = (
+				3A1F265D25DF9EE6000B2842 /* AwardsView.swift */,
+				3A1ABEA825E8047500441C68 /* Awards.json */,
+				3A1F265B25DF9EA0000B2842 /* Award.swift */,
+			);
+			path = Awards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
