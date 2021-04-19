@@ -9,15 +9,14 @@ import SwiftUI
 
 @main
 struct ShinyApp: App {
-    
+
     @StateObject var dataController: DataController
 
     init() {
         let dataController = DataController()
         _dataController = StateObject(wrappedValue: dataController)
     }
-    
-    
+
     var body: some Scene {
         WindowGroup {
             ContentView()
@@ -29,7 +28,7 @@ struct ShinyApp: App {
                 )
         }
     }
-    
+
     func save(_ note: Notification) {
         dataController.save()
     }

@@ -109,7 +109,6 @@
 				3AB5BA4F262DB03B009DF450 /* View */,
 				3AB5BA4E262DB02E009DF450 /* Model */,
 				3AB5BA4C262DAFB1009DF450 /* Helpers */,
-				3AB5BA4D262DAFF1009DF450 /* CoreData */,
 				3A1ABEA025E8006F00441C68 /* Localizable.strings */,
 				3A1ABEA425E8011800441C68 /* Localizable.stringsdict */,
 				3A3D471E25D9A2BC00406D81 /* Colors.xcassets */,
@@ -162,6 +161,7 @@
 			children = (
 				3A1ABEA825E8047500441C68 /* Awards.json */,
 				3A1F265B25DF9EA0000B2842 /* Award.swift */,
+				3AB5BA4D262DAFF1009DF450 /* CoreData */,
 			);
 			path = Model;
 			sourceTree = "<group>";

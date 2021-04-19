@@ -10,7 +10,7 @@ import SwiftUI
 
 class DataController: ObservableObject {
     let container: NSPersistentCloudKitContainer
-    
+
     static var preview: DataController = {
         let dataController = DataController(inMemory: true)
         let viewContext = dataController.container.viewContext
@@ -23,21 +23,19 @@ class DataController: ObservableObject {
 
         return dataController
     }()
-    
+
     static let model: NSManagedObjectModel = {
         guard let url = Bundle.main.url(forResource: "Main", withExtension: "momd") else {
             fatalError("Failed to locate model file")
         }
-        
+
         guard let managedObjectModel = NSManagedObjectModel(contentsOf: url) else {
             fatalError("Failed to load model file.")
         }
-        
+
         return managedObjectModel
     }()
-    
-    
-    
+
     init(inMemory: Bool = false) {
         container = NSPersistentCloudKitContainer(name: "Main", managedObjectModel: Self.model)
 
@@ -51,7 +49,7 @@ class DataController: ObservableObject {
             }
         }
     }
-    
+
     func createSampleData() throws {
         let viewContext = container.viewContext
 
@@ -74,17 +72,17 @@ class DataController: ObservableObject {
 
         try viewContext.save()
     }
-    
+
     func save() {
         if container.viewContext.hasChanges {
             try? container.viewContext.save()
         }
     }
-    
+
     func delete(_ object: NSManagedObject) {
         container.viewContext.delete(object)
     }
-    
+
     func deleteAll() {
         let fetchRequest1: NSFetchRequest<NSFetchRequestResult> = Item.fetchRequest()
         let batchDeleteRequest1 = NSBatchDeleteRequest(fetchRequest: fetchRequest1)
@@ -94,7 +92,7 @@ class DataController: ObservableObject {
         let batchDeleteRequest2 = NSBatchDeleteRequest(fetchRequest: fetchRequest2)
         _ = try? container.viewContext.execute(batchDeleteRequest2)
     }
-    
+
     func count<T>(for fetchRequest: NSFetchRequest<T>) -> Int {
         (try? container.viewContext.count(for: fetchRequest)) ?? 0
     }
