@@ -44,6 +44,9 @@
 		3AB5BA77262EEB02009DF450 /* DecodableString.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AB5BA71262EEA89009DF450 /* DecodableString.json */; };
 		3AB5BA79262EFE52009DF450 /* PerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB5BA78262EFE52009DF450 /* PerformanceTests.swift */; };
 		3AB5BA81262F00E0009DF450 /* ShinyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB5BA80262F00E0009DF450 /* ShinyUITests.swift */; };
+		3AB5BA89262F2809009DF450 /* ProjectsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB5BA88262F2809009DF450 /* ProjectsViewModel.swift */; };
+		3AB5BA8B262F328B009DF450 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB5BA8A262F328B009DF450 /* HomeViewModel.swift */; };
+		3AB5BA8D262F37FB009DF450 /* ItemRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB5BA8C262F37FB009DF450 /* ItemRowViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +114,9 @@
 		3AB5BA7E262F00E0009DF450 /* ShinyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShinyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AB5BA80262F00E0009DF450 /* ShinyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShinyUITests.swift; sourceTree = "<group>"; };
 		3AB5BA82262F00E0009DF450 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AB5BA88262F2809009DF450 /* ProjectsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewModel.swift; sourceTree = "<group>"; };
+		3AB5BA8A262F328B009DF450 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		3AB5BA8C262F37FB009DF450 /* ItemRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				3AB156EC25D2B9DD0025CFFA /* HomeView.swift */,
+				3AB5BA8A262F328B009DF450 /* HomeViewModel.swift */,
 				3A202E032618D08000CE92D4 /* ProjectSummaryView.swift */,
 				3A202E012618CFEE00CE92D4 /* ItemListView.swift */,
 			);
@@ -240,8 +247,10 @@
 			isa = PBXGroup;
 			children = (
 				3AB156EE25D2BA6E0025CFFA /* ProjectsView.swift */,
+				3AB5BA88262F2809009DF450 /* ProjectsViewModel.swift */,
 				3A1F265525DF9D30000B2842 /* SelectSomethingView.swift */,
 				3A0C462B25D2FF68009C7FBC /* ItemRowView.swift */,
+				3AB5BA8C262F37FB009DF450 /* ItemRowViewModel.swift */,
 				3A0C462925D2F8CE009C7FBC /* EditItemView.swift */,
 				3A3D472025D9A37100406D81 /* EditProjectView.swift */,
 				3A3D471C25D98B8C00406D81 /* ProjectHeaderView.swift */,
@@ -451,6 +460,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AB156F325D2E6030025CFFA /* Project+CoreDataHelpers.swift in Sources */,
+				3AB5BA8B262F328B009DF450 /* HomeViewModel.swift in Sources */,
 				3A3D471D25D98B8C00406D81 /* ProjectHeaderView.swift in Sources */,
 				3A1F265825DF9DE3000B2842 /* Bundle-Decodable.swift in Sources */,
 				3AB156EF25D2BA6E0025CFFA /* ProjectsView.swift in Sources */,
@@ -461,11 +471,13 @@
 				3A8585AC25E2F3CC004E901A /* Color+Additions.swift in Sources */,
 				3AB156E525D2AB7B0025CFFA /* Main.xcdatamodeld in Sources */,
 				3A3D472125D9A37100406D81 /* EditProjectView.swift in Sources */,
+				3AB5BA8D262F37FB009DF450 /* ItemRowViewModel.swift in Sources */,
 				3A202E042618D08000CE92D4 /* ProjectSummaryView.swift in Sources */,
 				3AB156E725D2AE5F0025CFFA /* DataController.swift in Sources */,
 				3A0C462C25D2FF68009C7FBC /* ItemRowView.swift in Sources */,
 				3AB156D725D2A7840025CFFA /* ContentView.swift in Sources */,
 				3A0C462E25D301AD009C7FBC /* Binding-OnChange.swift in Sources */,
+				3AB5BA89262F2809009DF450 /* ProjectsViewModel.swift in Sources */,
 				3AB156ED25D2B9DD0025CFFA /* HomeView.swift in Sources */,
 				3AB156D525D2A7840025CFFA /* ShinyApp.swift in Sources */,
 				3AB156F125D2E5B50025CFFA /* Item+CoreDataHelpers.swift in Sources */,
