@@ -34,7 +34,25 @@
 		3AB156EF25D2BA6E0025CFFA /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB156EE25D2BA6E0025CFFA /* ProjectsView.swift */; };
 		3AB156F125D2E5B50025CFFA /* Item+CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB156F025D2E5B50025CFFA /* Item+CoreDataHelpers.swift */; };
 		3AB156F325D2E6030025CFFA /* Project+CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB156F225D2E6030025CFFA /* Project+CoreDataHelpers.swift */; };
+		3AB5BA5C262E0331009DF450 /* ShinyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB5BA5B262E0331009DF450 /* ShinyTests.swift */; };
+		3AB5BA64262E0463009DF450 /* AssetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB5BA63262E0463009DF450 /* AssetTests.swift */; };
+		3AB5BA66262EB54B009DF450 /* ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB5BA65262EB54B009DF450 /* ProjectTests.swift */; };
+		3AB5BA68262EB7C4009DF450 /* AwardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB5BA67262EB7C4009DF450 /* AwardTests.swift */; };
+		3AB5BA6A262EC25B009DF450 /* DevelopmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB5BA69262EC25B009DF450 /* DevelopmentTests.swift */; };
+		3AB5BA6E262EE947009DF450 /* ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB5BA6D262EE947009DF450 /* ExtensionTests.swift */; };
+		3AB5BA76262EEAFD009DF450 /* DecodableDictionary.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AB5BA6F262EEA69009DF450 /* DecodableDictionary.json */; };
+		3AB5BA77262EEB02009DF450 /* DecodableString.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AB5BA71262EEA89009DF450 /* DecodableString.json */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3AB5BA5E262E0331009DF450 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AB156C925D2A7840025CFFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3AB156D025D2A7840025CFFA;
+			remoteInfo = Shiny;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3A0C462925D2F8CE009C7FBC /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
@@ -70,6 +88,16 @@
 		3AB156EE25D2BA6E0025CFFA /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
 		3AB156F025D2E5B50025CFFA /* Item+CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		3AB156F225D2E6030025CFFA /* Project+CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project+CoreDataHelpers.swift"; sourceTree = "<group>"; };
+		3AB5BA59262E0331009DF450 /* ShinyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShinyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AB5BA5B262E0331009DF450 /* ShinyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShinyTests.swift; sourceTree = "<group>"; };
+		3AB5BA5D262E0331009DF450 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AB5BA63262E0463009DF450 /* AssetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetTests.swift; sourceTree = "<group>"; };
+		3AB5BA65262EB54B009DF450 /* ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTests.swift; sourceTree = "<group>"; };
+		3AB5BA67262EB7C4009DF450 /* AwardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardTests.swift; sourceTree = "<group>"; };
+		3AB5BA69262EC25B009DF450 /* DevelopmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopmentTests.swift; sourceTree = "<group>"; };
+		3AB5BA6D262EE947009DF450 /* ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTests.swift; sourceTree = "<group>"; };
+		3AB5BA6F262EEA69009DF450 /* DecodableDictionary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DecodableDictionary.json; sourceTree = "<group>"; };
+		3AB5BA71262EEA89009DF450 /* DecodableString.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DecodableString.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +109,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3AB5BA56262E0331009DF450 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -88,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				3AB156D325D2A7840025CFFA /* Shiny */,
+				3AB5BA5A262E0331009DF450 /* ShinyTests */,
 				3AB156D225D2A7840025CFFA /* Products */,
 				3AB156E925D2B5EB0025CFFA /* Frameworks */,
 			);
@@ -97,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				3AB156D125D2A7840025CFFA /* Shiny.app */,
+				3AB5BA59262E0331009DF450 /* ShinyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -200,6 +237,30 @@
 			path = Awards;
 			sourceTree = "<group>";
 		};
+		3AB5BA5A262E0331009DF450 /* ShinyTests */ = {
+			isa = PBXGroup;
+			children = (
+				3AB5BA74262EEAB1009DF450 /* Fixtures */,
+				3AB5BA63262E0463009DF450 /* AssetTests.swift */,
+				3AB5BA5B262E0331009DF450 /* ShinyTests.swift */,
+				3AB5BA65262EB54B009DF450 /* ProjectTests.swift */,
+				3AB5BA67262EB7C4009DF450 /* AwardTests.swift */,
+				3AB5BA69262EC25B009DF450 /* DevelopmentTests.swift */,
+				3AB5BA6D262EE947009DF450 /* ExtensionTests.swift */,
+				3AB5BA5D262E0331009DF450 /* Info.plist */,
+			);
+			path = ShinyTests;
+			sourceTree = "<group>";
+		};
+		3AB5BA74262EEAB1009DF450 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				3AB5BA6F262EEA69009DF450 /* DecodableDictionary.json */,
+				3AB5BA71262EEA89009DF450 /* DecodableString.json */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -221,6 +282,24 @@
 			productReference = 3AB156D125D2A7840025CFFA /* Shiny.app */;
 			productType = "com.apple.product-type.application";
 		};
+		3AB5BA58262E0331009DF450 /* ShinyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AB5BA60262E0331009DF450 /* Build configuration list for PBXNativeTarget "ShinyTests" */;
+			buildPhases = (
+				3AB5BA55262E0331009DF450 /* Sources */,
+				3AB5BA56262E0331009DF450 /* Frameworks */,
+				3AB5BA57262E0331009DF450 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3AB5BA5F262E0331009DF450 /* PBXTargetDependency */,
+			);
+			name = ShinyTests;
+			productName = ShinyTests;
+			productReference = 3AB5BA59262E0331009DF450 /* ShinyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -232,6 +311,10 @@
 				TargetAttributes = {
 					3AB156D025D2A7840025CFFA = {
 						CreatedOnToolsVersion = 12.5;
+					};
+					3AB5BA58262E0331009DF450 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 3AB156D025D2A7840025CFFA;
 					};
 				};
 			};
@@ -250,6 +333,7 @@
 			projectRoot = "";
 			targets = (
 				3AB156D025D2A7840025CFFA /* Shiny */,
+				3AB5BA58262E0331009DF450 /* ShinyTests */,
 			);
 		};
 /* End PBXProject section */
@@ -265,6 +349,15 @@
 				3AB156DC25D2A7850025CFFA /* Preview Assets.xcassets in Resources */,
 				3AB156D925D2A7850025CFFA /* Assets.xcassets in Resources */,
 				3A1ABEA225E8011800441C68 /* Localizable.stringsdict in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AB5BA57262E0331009DF450 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AB5BA77262EEB02009DF450 /* DecodableString.json in Resources */,
+				3AB5BA76262EEAFD009DF450 /* DecodableDictionary.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,7 +411,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3AB5BA55262E0331009DF450 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AB5BA64262E0463009DF450 /* AssetTests.swift in Sources */,
+				3AB5BA68262EB7C4009DF450 /* AwardTests.swift in Sources */,
+				3AB5BA5C262E0331009DF450 /* ShinyTests.swift in Sources */,
+				3AB5BA6E262EE947009DF450 /* ExtensionTests.swift in Sources */,
+				3AB5BA66262EB54B009DF450 /* ProjectTests.swift in Sources */,
+				3AB5BA6A262EC25B009DF450 /* DevelopmentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3AB5BA5F262E0331009DF450 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3AB156D025D2A7840025CFFA /* Shiny */;
+			targetProxy = 3AB5BA5E262E0331009DF450 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3A1ABEA025E8006F00441C68 /* Localizable.strings */ = {
@@ -513,6 +627,46 @@
 			};
 			name = Release;
 		};
+		3AB5BA61262E0331009DF450 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 358V8FBM3U;
+				INFOPLIST_FILE = ShinyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.antonnovoselov.ShinyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shiny.app/Shiny";
+			};
+			name = Debug;
+		};
+		3AB5BA62262E0331009DF450 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 358V8FBM3U;
+				INFOPLIST_FILE = ShinyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.antonnovoselov.ShinyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shiny.app/Shiny";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -530,6 +684,15 @@
 			buildConfigurations = (
 				3AB156E125D2A7850025CFFA /* Debug */,
 				3AB156E225D2A7850025CFFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AB5BA60262E0331009DF450 /* Build configuration list for PBXNativeTarget "ShinyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AB5BA61262E0331009DF450 /* Debug */,
+				3AB5BA62262E0331009DF450 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

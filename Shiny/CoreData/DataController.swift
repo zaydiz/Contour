@@ -23,10 +23,10 @@ class DataController: ObservableObject {
 
         return dataController
     }()
-
+    
     static let model: NSManagedObjectModel = {
         guard let url = Bundle.main.url(forResource: "Main", withExtension: "momd") else {
-            fatalError("Failed to locate model file")
+            fatalError("Failed to locate model file.")
         }
 
         guard let managedObjectModel = NSManagedObjectModel(contentsOf: url) else {
@@ -96,7 +96,7 @@ class DataController: ObservableObject {
     func count<T>(for fetchRequest: NSFetchRequest<T>) -> Int {
         (try? container.viewContext.count(for: fetchRequest)) ?? 0
     }
-    
+
     func hasEarned(award: Award) -> Bool {
         switch award.criterion {
         case "items":
