@@ -7,11 +7,10 @@
 
 import SwiftUI
 import CoreData
+import CoreSpotlight
 
 struct HomeView: View {
-    
     @StateObject var viewModel: ViewModel
-
     
     var projectRows: [GridItem] {
         [GridItem(.fixed(100))]
@@ -46,14 +45,32 @@ struct HomeView: View {
                     }
                     .padding(.horizontal)
                 }
-            }
-            
+                
+                if let item = viewModel.selectedItem {
+                    NavigationLink(
+                        destination: EditItemView(item: item),
+                        tag: item,
+                        selection: $viewModel.selectedItem,
+                        label: EmptyView.init
+                    )
+                    .id(item)
+                }
+            } // Outer ScrollView
             .background(Color.systemGroupedBackground.ignoresSafeArea())
             .navigationTitle("Home")
             .toolbar {
                 Button("Add Data", action: viewModel.addSampleData)
             }
-
+            .onContinueUserActivity(CSSearchableItemActionType, perform: loadSpotlightItem)
+            
+            
+        }
+    }
+    
+    // MARK: - CoreSpotlight
+    func loadSpotlightItem(_ userActivity: NSUserActivity) {
+        if let uniqueIdentifier = userActivity.userInfo?[CSSearchableItemActivityIdentifier] as? String {
+            viewModel.selectItem(with: uniqueIdentifier)
         }
     }
 }
