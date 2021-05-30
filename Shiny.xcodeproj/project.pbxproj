@@ -22,6 +22,7 @@
 		3A3D471D25D98B8C00406D81 /* ProjectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3D471C25D98B8C00406D81 /* ProjectHeaderView.swift */; };
 		3A3D471F25D9A2BC00406D81 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A3D471E25D9A2BC00406D81 /* Colors.xcassets */; };
 		3A3D472125D9A37100406D81 /* EditProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3D472025D9A37100406D81 /* EditProjectView.swift */; };
+		3A7AEB112663DF8100076D85 /* UnlockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7AEB102663DF8100076D85 /* UnlockManager.swift */; };
 		3A8585AC25E2F3CC004E901A /* Color+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8585AB25E2F3CC004E901A /* Color+Additions.swift */; };
 		3AB156D525D2A7840025CFFA /* ShinyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB156D425D2A7840025CFFA /* ShinyApp.swift */; };
 		3AB156D725D2A7840025CFFA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB156D625D2A7840025CFFA /* ContentView.swift */; };
@@ -85,6 +86,8 @@
 		3A3D471C25D98B8C00406D81 /* ProjectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectHeaderView.swift; sourceTree = "<group>"; };
 		3A3D471E25D9A2BC00406D81 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		3A3D472025D9A37100406D81 /* EditProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectView.swift; sourceTree = "<group>"; };
+		3A7AEB102663DF8100076D85 /* UnlockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockManager.swift; sourceTree = "<group>"; };
+		3A7AEB122663E12800076D85 /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
 		3A8585AB25E2F3CC004E901A /* Color+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Additions.swift"; sourceTree = "<group>"; };
 		3AB156D125D2A7840025CFFA /* Shiny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shiny.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AB156D425D2A7840025CFFA /* ShinyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShinyApp.swift; sourceTree = "<group>"; };
@@ -171,6 +174,8 @@
 			children = (
 				3AB156E825D2B5D00025CFFA /* Shiny.entitlements */,
 				3AB156D425D2A7840025CFFA /* ShinyApp.swift */,
+				3A7AEB102663DF8100076D85 /* UnlockManager.swift */,
+				3A7AEB122663E12800076D85 /* Configuration.storekit */,
 				3AB5BA4F262DB03B009DF450 /* Activities */,
 				3AB5BA4D262DAFF1009DF450 /* CoreData */,
 				3AB5BA4C262DAFB1009DF450 /* Helpers */,
@@ -464,6 +469,7 @@
 				3A3D471D25D98B8C00406D81 /* ProjectHeaderView.swift in Sources */,
 				3A1F265825DF9DE3000B2842 /* Bundle-Decodable.swift in Sources */,
 				3AB156EF25D2BA6E0025CFFA /* ProjectsView.swift in Sources */,
+				3A7AEB112663DF8100076D85 /* UnlockManager.swift in Sources */,
 				3A1F265625DF9D30000B2842 /* SelectSomethingView.swift in Sources */,
 				3A202E022618CFEE00CE92D4 /* ItemListView.swift in Sources */,
 				3A1F265C25DF9EA0000B2842 /* Award.swift in Sources */,
