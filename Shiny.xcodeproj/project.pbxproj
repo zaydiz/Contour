@@ -23,6 +23,10 @@
 		3A3D471F25D9A2BC00406D81 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A3D471E25D9A2BC00406D81 /* Colors.xcassets */; };
 		3A3D472125D9A37100406D81 /* EditProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3D472025D9A37100406D81 /* EditProjectView.swift */; };
 		3A7AEB112663DF8100076D85 /* UnlockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7AEB102663DF8100076D85 /* UnlockManager.swift */; };
+		3A7AEB142663F10F00076D85 /* SKProduct-LocalizedPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7AEB132663F10F00076D85 /* SKProduct-LocalizedPrice.swift */; };
+		3A7AEB162663F17100076D85 /* PurchaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7AEB152663F17100076D85 /* PurchaseButton.swift */; };
+		3A7AEB182663F4F900076D85 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7AEB172663F4F900076D85 /* ProductView.swift */; };
+		3A7AEB1A2663F54800076D85 /* UnlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7AEB192663F54800076D85 /* UnlockView.swift */; };
 		3A8585AC25E2F3CC004E901A /* Color+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8585AB25E2F3CC004E901A /* Color+Additions.swift */; };
 		3AB156D525D2A7840025CFFA /* ShinyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB156D425D2A7840025CFFA /* ShinyApp.swift */; };
 		3AB156D725D2A7840025CFFA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB156D625D2A7840025CFFA /* ContentView.swift */; };
@@ -88,6 +92,10 @@
 		3A3D472025D9A37100406D81 /* EditProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectView.swift; sourceTree = "<group>"; };
 		3A7AEB102663DF8100076D85 /* UnlockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockManager.swift; sourceTree = "<group>"; };
 		3A7AEB122663E12800076D85 /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
+		3A7AEB132663F10F00076D85 /* SKProduct-LocalizedPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKProduct-LocalizedPrice.swift"; sourceTree = "<group>"; };
+		3A7AEB152663F17100076D85 /* PurchaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseButton.swift; sourceTree = "<group>"; };
+		3A7AEB172663F4F900076D85 /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
+		3A7AEB192663F54800076D85 /* UnlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockView.swift; sourceTree = "<group>"; };
 		3A8585AB25E2F3CC004E901A /* Color+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Additions.swift"; sourceTree = "<group>"; };
 		3AB156D125D2A7840025CFFA /* Shiny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shiny.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AB156D425D2A7840025CFFA /* ShinyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShinyApp.swift; sourceTree = "<group>"; };
@@ -148,6 +156,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A7AEB1B2663F7EC00076D85 /* Unlock */ = {
+			isa = PBXGroup;
+			children = (
+				3A7AEB102663DF8100076D85 /* UnlockManager.swift */,
+				3A7AEB152663F17100076D85 /* PurchaseButton.swift */,
+				3A7AEB172663F4F900076D85 /* ProductView.swift */,
+				3A7AEB192663F54800076D85 /* UnlockView.swift */,
+			);
+			path = Unlock;
+			sourceTree = "<group>";
+		};
+		3A7AEB1C2663F82200076D85 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3A7AEB132663F10F00076D85 /* SKProduct-LocalizedPrice.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3A7AEB1D2663F82C00076D85 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				3A7AEB122663E12800076D85 /* Configuration.storekit */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
 		3AB156C825D2A7840025CFFA = {
 			isa = PBXGroup;
 			children = (
@@ -174,8 +209,8 @@
 			children = (
 				3AB156E825D2B5D00025CFFA /* Shiny.entitlements */,
 				3AB156D425D2A7840025CFFA /* ShinyApp.swift */,
-				3A7AEB102663DF8100076D85 /* UnlockManager.swift */,
-				3A7AEB122663E12800076D85 /* Configuration.storekit */,
+				3A7AEB1C2663F82200076D85 /* Extensions */,
+				3A7AEB1D2663F82C00076D85 /* Configuration */,
 				3AB5BA4F262DB03B009DF450 /* Activities */,
 				3AB5BA4D262DAFF1009DF450 /* CoreData */,
 				3AB5BA4C262DAFB1009DF450 /* Helpers */,
@@ -233,6 +268,7 @@
 				3AB5BA52262E0109009DF450 /* Home */,
 				3AB5BA53262E0112009DF450 /* Projects */,
 				3AB5BA54262E0117009DF450 /* Awards */,
+				3A7AEB1B2663F7EC00076D85 /* Unlock */,
 			);
 			path = Activities;
 			sourceTree = "<group>";
@@ -466,6 +502,7 @@
 			files = (
 				3AB156F325D2E6030025CFFA /* Project+CoreDataHelpers.swift in Sources */,
 				3AB5BA8B262F328B009DF450 /* HomeViewModel.swift in Sources */,
+				3A7AEB1A2663F54800076D85 /* UnlockView.swift in Sources */,
 				3A3D471D25D98B8C00406D81 /* ProjectHeaderView.swift in Sources */,
 				3A1F265825DF9DE3000B2842 /* Bundle-Decodable.swift in Sources */,
 				3AB156EF25D2BA6E0025CFFA /* ProjectsView.swift in Sources */,
@@ -473,8 +510,11 @@
 				3A1F265625DF9D30000B2842 /* SelectSomethingView.swift in Sources */,
 				3A202E022618CFEE00CE92D4 /* ItemListView.swift in Sources */,
 				3A1F265C25DF9EA0000B2842 /* Award.swift in Sources */,
+				3A7AEB142663F10F00076D85 /* SKProduct-LocalizedPrice.swift in Sources */,
+				3A7AEB182663F4F900076D85 /* ProductView.swift in Sources */,
 				3A1F265E25DF9EE6000B2842 /* AwardsView.swift in Sources */,
 				3A8585AC25E2F3CC004E901A /* Color+Additions.swift in Sources */,
+				3A7AEB162663F17100076D85 /* PurchaseButton.swift in Sources */,
 				3AB156E525D2AB7B0025CFFA /* Main.xcdatamodeld in Sources */,
 				3A3D472125D9A37100406D81 /* EditProjectView.swift in Sources */,
 				3AB5BA8D262F37FB009DF450 /* ItemRowViewModel.swift in Sources */,
