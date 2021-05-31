@@ -109,12 +109,7 @@ struct ProjectsView: View {
         .sheet(isPresented: $viewModel.showingUnlockView) {
             UnlockView()
         }
-        
-        
     }
-    
-    
-    
 }
 
 struct ProjectsView_Previews: PreviewProvider {
