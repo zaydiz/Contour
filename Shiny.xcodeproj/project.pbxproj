@@ -66,6 +66,14 @@
 		3ABD9FE4266A4C8800438772 /* Item+CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB156F025D2E5B50025CFFA /* Item+CoreDataHelpers.swift */; };
 		3ABD9FE6266A4CED00438772 /* DataController-Reminders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD9FE5266A4CED00438772 /* DataController-Reminders.swift */; };
 		3ABD9FE8266A4D6A00438772 /* DataController-Awards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD9FE7266A4D6A00438772 /* DataController-Awards.swift */; };
+		3ABD9FFD266A5D4300438772 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A1ABEA025E8006F00441C68 /* Localizable.strings */; };
+		3ABD9FFE266A5EBF00438772 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A3D471E25D9A2BC00406D81 /* Colors.xcassets */; };
+		3ABD9FFF266A5EC500438772 /* Project+CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB156F225D2E6030025CFFA /* Project+CoreDataHelpers.swift */; };
+		3ABDA004266A659600438772 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABDA000266A651A00438772 /* DataProvider.swift */; };
+		3ABDA005266A659A00438772 /* SimpleWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABDA002266A653900438772 /* SimpleWidget.swift */; };
+		3ABDA007266A65CA00438772 /* ComplexWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABDA006266A65CA00438772 /* ComplexWidget.swift */; };
+		3ABDA008266A666D00438772 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABDA000266A651A00438772 /* DataProvider.swift */; };
+		3ABDA00A266A672100438772 /* DataController-StoreKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABDA009266A672100438772 /* DataController-StoreKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -175,6 +183,10 @@
 		3ABD9FE5266A4CED00438772 /* DataController-Reminders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataController-Reminders.swift"; sourceTree = "<group>"; };
 		3ABD9FE7266A4D6A00438772 /* DataController-Awards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataController-Awards.swift"; sourceTree = "<group>"; };
 		3ABD9FE9266A50B300438772 /* ShinyWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShinyWidgetExtension.entitlements; sourceTree = "<group>"; };
+		3ABDA000266A651A00438772 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		3ABDA002266A653900438772 /* SimpleWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleWidget.swift; sourceTree = "<group>"; };
+		3ABDA006266A65CA00438772 /* ComplexWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexWidget.swift; sourceTree = "<group>"; };
+		3ABDA009266A672100438772 /* DataController-StoreKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataController-StoreKit.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -317,6 +329,7 @@
 			isa = PBXGroup;
 			children = (
 				3AB156E625D2AE5F0025CFFA /* DataController.swift */,
+				3ABDA009266A672100438772 /* DataController-StoreKit.swift */,
 				3ABD9FE7266A4D6A00438772 /* DataController-Awards.swift */,
 				3ABD9FE5266A4CED00438772 /* DataController-Reminders.swift */,
 				3AB156E325D2AB7B0025CFFA /* Main.xcdatamodeld */,
@@ -412,6 +425,9 @@
 			isa = PBXGroup;
 			children = (
 				3ABD9FD3266A4B9600438772 /* ShinyWidget.swift */,
+				3ABDA000266A651A00438772 /* DataProvider.swift */,
+				3ABDA006266A65CA00438772 /* ComplexWidget.swift */,
+				3ABDA002266A653900438772 /* SimpleWidget.swift */,
 				3ABD9FD5266A4B9600438772 /* ShinyWidget.intentdefinition */,
 				3ABD9FD6266A4B9700438772 /* Assets.xcassets */,
 				3ABD9FD8266A4B9700438772 /* Info.plist */,
@@ -576,7 +592,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3ABD9FFE266A5EBF00438772 /* Colors.xcassets in Resources */,
 				3ABD9FD7266A4B9700438772 /* Assets.xcassets in Resources */,
+				3ABD9FFD266A5D4300438772 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,6 +644,7 @@
 				3A7AEB182663F4F900076D85 /* ProductView.swift in Sources */,
 				3A1F265E25DF9EE6000B2842 /* AwardsView.swift in Sources */,
 				3A8585AC25E2F3CC004E901A /* Color+Additions.swift in Sources */,
+				3ABDA00A266A672100438772 /* DataController-StoreKit.swift in Sources */,
 				3A7AEB162663F17100076D85 /* PurchaseButton.swift in Sources */,
 				3AB156E525D2AB7B0025CFFA /* Main.xcdatamodeld in Sources */,
 				3A3D472125D9A37100406D81 /* EditProjectView.swift in Sources */,
@@ -637,6 +656,7 @@
 				3A0C462E25D301AD009C7FBC /* Binding-OnChange.swift in Sources */,
 				3AB5BA89262F2809009DF450 /* ProjectsViewModel.swift in Sources */,
 				3AB156ED25D2B9DD0025CFFA /* HomeView.swift in Sources */,
+				3ABDA008266A666D00438772 /* DataProvider.swift in Sources */,
 				3AB156D525D2A7840025CFFA /* ShinyApp.swift in Sources */,
 				3AB156F125D2E5B50025CFFA /* Item+CoreDataHelpers.swift in Sources */,
 				3A0C462A25D2F8CE009C7FBC /* EditItemView.swift in Sources */,
@@ -669,8 +689,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3ABD9FFF266A5EC500438772 /* Project+CoreDataHelpers.swift in Sources */,
 				3ABD9FD9266A4B9700438772 /* ShinyWidget.intentdefinition in Sources */,
 				3ABD9FE2266A4C8100438772 /* DataController.swift in Sources */,
+				3ABDA005266A659A00438772 /* SimpleWidget.swift in Sources */,
+				3ABDA007266A65CA00438772 /* ComplexWidget.swift in Sources */,
+				3ABDA004266A659600438772 /* DataProvider.swift in Sources */,
 				3ABD9FE3266A4C8500438772 /* Main.xcdatamodeld in Sources */,
 				3ABD9FD4266A4B9600438772 /* ShinyWidget.swift in Sources */,
 				3ABD9FE4266A4C8800438772 /* Item+CoreDataHelpers.swift in Sources */,

@@ -9,7 +9,6 @@ import CoreData
 import SwiftUI
 import CoreSpotlight
 import WidgetKit
-import StoreKit
 
 class DataController: ObservableObject {
     let container: NSPersistentCloudKitContainer
@@ -68,11 +67,6 @@ class DataController: ObservableObject {
             }
         }
         
-        
-//        if inMemory {
-//            container.persistentStoreDescriptions.first?.url = URL(fileURLWithPath: "/dev/null")
-//        }
-//
         container.loadPersistentStores { _, error in
             if let error = error {
                 fatalError("Fatal error loading store: \(error.localizedDescription)")
@@ -87,18 +81,6 @@ class DataController: ObservableObject {
         }
         
         
-    }
-    
-    func appLaunched() {
-        return
-        guard count(for: Project.fetchRequest()) >= 5 else { return }
-
-//        let allScenes = UIApplication.shared.connectedScenes
-//        let scene = allScenes.first { $0.activationState == .foregroundActive }
-//
-//        if let windowScene = scene as? UIWindowScene {
-//            SKStoreReviewController.requestReview(in: windowScene)
-//        }
     }
 
     func createSampleData() throws {
