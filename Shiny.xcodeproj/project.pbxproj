@@ -54,6 +54,18 @@
 		3AB5BA89262F2809009DF450 /* ProjectsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB5BA88262F2809009DF450 /* ProjectsViewModel.swift */; };
 		3AB5BA8B262F328B009DF450 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB5BA8A262F328B009DF450 /* HomeViewModel.swift */; };
 		3AB5BA8D262F37FB009DF450 /* ItemRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB5BA8C262F37FB009DF450 /* ItemRowViewModel.swift */; };
+		3ABD9FCF266A4B9600438772 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ABD9FCE266A4B9600438772 /* WidgetKit.framework */; };
+		3ABD9FD1266A4B9600438772 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ABD9FD0266A4B9600438772 /* SwiftUI.framework */; };
+		3ABD9FD4266A4B9600438772 /* ShinyWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD9FD3266A4B9600438772 /* ShinyWidget.swift */; };
+		3ABD9FD7266A4B9700438772 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ABD9FD6266A4B9700438772 /* Assets.xcassets */; };
+		3ABD9FD9266A4B9700438772 /* ShinyWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD9FD5266A4B9600438772 /* ShinyWidget.intentdefinition */; };
+		3ABD9FDA266A4B9700438772 /* ShinyWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD9FD5266A4B9600438772 /* ShinyWidget.intentdefinition */; };
+		3ABD9FDD266A4B9700438772 /* ShinyWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3ABD9FCD266A4B9600438772 /* ShinyWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3ABD9FE2266A4C8100438772 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB156E625D2AE5F0025CFFA /* DataController.swift */; };
+		3ABD9FE3266A4C8500438772 /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3AB156E325D2AB7B0025CFFA /* Main.xcdatamodeld */; };
+		3ABD9FE4266A4C8800438772 /* Item+CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB156F025D2E5B50025CFFA /* Item+CoreDataHelpers.swift */; };
+		3ABD9FE6266A4CED00438772 /* DataController-Reminders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD9FE5266A4CED00438772 /* DataController-Reminders.swift */; };
+		3ABD9FE8266A4D6A00438772 /* DataController-Awards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD9FE7266A4D6A00438772 /* DataController-Awards.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,7 +83,28 @@
 			remoteGlobalIDString = 3AB156D025D2A7840025CFFA;
 			remoteInfo = Shiny;
 		};
+		3ABD9FDB266A4B9700438772 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AB156C925D2A7840025CFFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3ABD9FCC266A4B9600438772;
+			remoteInfo = ShinyWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3ABD9FDE266A4B9700438772 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3ABD9FDD266A4B9700438772 /* ShinyWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3A0C462925D2F8CE009C7FBC /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
@@ -132,6 +165,16 @@
 		3AB5BA88262F2809009DF450 /* ProjectsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewModel.swift; sourceTree = "<group>"; };
 		3AB5BA8A262F328B009DF450 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		3AB5BA8C262F37FB009DF450 /* ItemRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowViewModel.swift; sourceTree = "<group>"; };
+		3ABD9FCD266A4B9600438772 /* ShinyWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShinyWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ABD9FCE266A4B9600438772 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		3ABD9FD0266A4B9600438772 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		3ABD9FD3266A4B9600438772 /* ShinyWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShinyWidget.swift; sourceTree = "<group>"; };
+		3ABD9FD5266A4B9600438772 /* ShinyWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = ShinyWidget.intentdefinition; sourceTree = "<group>"; };
+		3ABD9FD6266A4B9700438772 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3ABD9FD8266A4B9700438772 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3ABD9FE5266A4CED00438772 /* DataController-Reminders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataController-Reminders.swift"; sourceTree = "<group>"; };
+		3ABD9FE7266A4D6A00438772 /* DataController-Awards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataController-Awards.swift"; sourceTree = "<group>"; };
+		3ABD9FE9266A50B300438772 /* ShinyWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShinyWidgetExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +197,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3ABD9FCA266A4B9600438772 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ABD9FD1266A4B9600438772 /* SwiftUI.framework in Frameworks */,
+				3ABD9FCF266A4B9600438772 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,9 +242,11 @@
 		3AB156C825D2A7840025CFFA = {
 			isa = PBXGroup;
 			children = (
+				3ABD9FE9266A50B300438772 /* ShinyWidgetExtension.entitlements */,
 				3AB156D325D2A7840025CFFA /* Shiny */,
 				3AB5BA5A262E0331009DF450 /* ShinyTests */,
 				3AB5BA7F262F00E0009DF450 /* ShinyUITests */,
+				3ABD9FD2266A4B9600438772 /* ShinyWidget */,
 				3AB156D225D2A7840025CFFA /* Products */,
 				3AB156E925D2B5EB0025CFFA /* Frameworks */,
 			);
@@ -204,6 +258,7 @@
 				3AB156D125D2A7840025CFFA /* Shiny.app */,
 				3AB5BA59262E0331009DF450 /* ShinyTests.xctest */,
 				3AB5BA7E262F00E0009DF450 /* ShinyUITests.xctest */,
+				3ABD9FCD266A4B9600438772 /* ShinyWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -242,6 +297,8 @@
 			isa = PBXGroup;
 			children = (
 				3AB156EA25D2B5EB0025CFFA /* CloudKit.framework */,
+				3ABD9FCE266A4B9600438772 /* WidgetKit.framework */,
+				3ABD9FD0266A4B9600438772 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -260,6 +317,8 @@
 			isa = PBXGroup;
 			children = (
 				3AB156E625D2AE5F0025CFFA /* DataController.swift */,
+				3ABD9FE7266A4D6A00438772 /* DataController-Awards.swift */,
+				3ABD9FE5266A4CED00438772 /* DataController-Reminders.swift */,
 				3AB156E325D2AB7B0025CFFA /* Main.xcdatamodeld */,
 				3AB156F025D2E5B50025CFFA /* Item+CoreDataHelpers.swift */,
 				3AB156F225D2E6030025CFFA /* Project+CoreDataHelpers.swift */,
@@ -349,6 +408,17 @@
 			path = ShinyUITests;
 			sourceTree = "<group>";
 		};
+		3ABD9FD2266A4B9600438772 /* ShinyWidget */ = {
+			isa = PBXGroup;
+			children = (
+				3ABD9FD3266A4B9600438772 /* ShinyWidget.swift */,
+				3ABD9FD5266A4B9600438772 /* ShinyWidget.intentdefinition */,
+				3ABD9FD6266A4B9700438772 /* Assets.xcassets */,
+				3ABD9FD8266A4B9700438772 /* Info.plist */,
+			);
+			path = ShinyWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -360,10 +430,12 @@
 				3AB156CE25D2A7840025CFFA /* Frameworks */,
 				3AB156CF25D2A7840025CFFA /* Resources */,
 				3AB5BA51262DB7F5009DF450 /* ShellScript */,
+				3ABD9FDE266A4B9700438772 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3ABD9FDC266A4B9700438772 /* PBXTargetDependency */,
 			);
 			name = Shiny;
 			productName = Shiny;
@@ -406,6 +478,23 @@
 			productReference = 3AB5BA7E262F00E0009DF450 /* ShinyUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		3ABD9FCC266A4B9600438772 /* ShinyWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3ABD9FE1266A4B9700438772 /* Build configuration list for PBXNativeTarget "ShinyWidgetExtension" */;
+			buildPhases = (
+				3ABD9FC9266A4B9600438772 /* Sources */,
+				3ABD9FCA266A4B9600438772 /* Frameworks */,
+				3ABD9FCB266A4B9600438772 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShinyWidgetExtension;
+			productName = ShinyWidgetExtension;
+			productReference = 3ABD9FCD266A4B9600438772 /* ShinyWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -426,6 +515,9 @@
 						CreatedOnToolsVersion = 12.5;
 						TestTargetID = 3AB156D025D2A7840025CFFA;
 					};
+					3ABD9FCC266A4B9600438772 = {
+						CreatedOnToolsVersion = 12.5;
+					};
 				};
 			};
 			buildConfigurationList = 3AB156CC25D2A7840025CFFA /* Build configuration list for PBXProject "Shiny" */;
@@ -445,6 +537,7 @@
 				3AB156D025D2A7840025CFFA /* Shiny */,
 				3AB5BA58262E0331009DF450 /* ShinyTests */,
 				3AB5BA7D262F00E0009DF450 /* ShinyUITests */,
+				3ABD9FCC266A4B9600438772 /* ShinyWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -479,6 +572,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3ABD9FCB266A4B9600438772 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ABD9FD7266A4B9700438772 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -509,6 +610,7 @@
 				3AB156F325D2E6030025CFFA /* Project+CoreDataHelpers.swift in Sources */,
 				3AB5BA8B262F328B009DF450 /* HomeViewModel.swift in Sources */,
 				3A7AEB1A2663F54800076D85 /* UnlockView.swift in Sources */,
+				3ABD9FE8266A4D6A00438772 /* DataController-Awards.swift in Sources */,
 				3A3D471D25D98B8C00406D81 /* ProjectHeaderView.swift in Sources */,
 				3A6B2ACD2665466D00FD1DB3 /* AppDelegate.swift in Sources */,
 				3A6B2ACF2665467400FD1DB3 /* SceneDelegate.swift in Sources */,
@@ -517,7 +619,9 @@
 				3A7AEB112663DF8100076D85 /* UnlockManager.swift in Sources */,
 				3A1F265625DF9D30000B2842 /* SelectSomethingView.swift in Sources */,
 				3A202E022618CFEE00CE92D4 /* ItemListView.swift in Sources */,
+				3ABD9FDA266A4B9700438772 /* ShinyWidget.intentdefinition in Sources */,
 				3A1F265C25DF9EA0000B2842 /* Award.swift in Sources */,
+				3ABD9FE6266A4CED00438772 /* DataController-Reminders.swift in Sources */,
 				3A7AEB142663F10F00076D85 /* SKProduct-LocalizedPrice.swift in Sources */,
 				3A7AEB182663F4F900076D85 /* ProductView.swift in Sources */,
 				3A1F265E25DF9EE6000B2842 /* AwardsView.swift in Sources */,
@@ -561,6 +665,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3ABD9FC9266A4B9600438772 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ABD9FD9266A4B9700438772 /* ShinyWidget.intentdefinition in Sources */,
+				3ABD9FE2266A4C8100438772 /* DataController.swift in Sources */,
+				3ABD9FE3266A4C8500438772 /* Main.xcdatamodeld in Sources */,
+				3ABD9FD4266A4B9600438772 /* ShinyWidget.swift in Sources */,
+				3ABD9FE4266A4C8800438772 /* Item+CoreDataHelpers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -573,6 +689,11 @@
 			isa = PBXTargetDependency;
 			target = 3AB156D025D2A7840025CFFA /* Shiny */;
 			targetProxy = 3AB5BA83262F00E0009DF450 /* PBXContainerItemProxy */;
+		};
+		3ABD9FDC266A4B9700438772 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3ABD9FCC266A4B9600438772 /* ShinyWidgetExtension */;
+			targetProxy = 3ABD9FDB266A4B9700438772 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -726,6 +847,7 @@
 		3AB156E125D2A7850025CFFA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Shiny/Shiny.entitlements;
@@ -749,6 +871,7 @@
 		3AB156E225D2A7850025CFFA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Shiny/Shiny.entitlements;
@@ -847,6 +970,50 @@
 			};
 			name = Release;
 		};
+		3ABD9FDF266A4B9700438772 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = ShinyWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 358V8FBM3U;
+				INFOPLIST_FILE = ShinyWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.antonnovoselov.Shiny.ShinyWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3ABD9FE0266A4B9700438772 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = ShinyWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 358V8FBM3U;
+				INFOPLIST_FILE = ShinyWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.antonnovoselov.Shiny.ShinyWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -882,6 +1049,15 @@
 			buildConfigurations = (
 				3AB5BA86262F00E0009DF450 /* Debug */,
 				3AB5BA87262F00E0009DF450 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3ABD9FE1266A4B9700438772 /* Build configuration list for PBXNativeTarget "ShinyWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3ABD9FDF266A4B9700438772 /* Debug */,
+				3ABD9FE0266A4B9700438772 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
