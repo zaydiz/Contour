@@ -11,7 +11,7 @@ struct ItemListView: View {
     
     let title: LocalizedStringKey
 //    let items: FetchedResults<Item>.SubSequence
-    let items: ArraySlice<Item>
+    @Binding var items: ArraySlice<Item>
 
     
     
