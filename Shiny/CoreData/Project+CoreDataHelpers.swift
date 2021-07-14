@@ -105,7 +105,7 @@ extension Project {
         let parent = CKRecord(recordType: "Project", recordID: parentID)
         parent["title"] = projectTitle
         parent["detail"] = projectDetail
-        parent["owner"] = "TwoStraws"
+        parent["owner"] = "AntonNovoselov"
         parent["closed"] = closed
 
         var records = projectItemsDefaultSorted.map { item -> CKRecord in

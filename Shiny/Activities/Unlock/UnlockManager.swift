@@ -37,7 +37,7 @@ class UnlockManager: NSObject, ObservableObject, SKPaymentTransactionObserver, S
         self.dataController = dataController
 
         // Prepare to look for our unlock product.
-        let productIDs = Set(["com.antonnovoselov.Shiny.unlock"])
+        let productIDs = Set(["com.antonnovoselov.Shiny2.unlock"])
         request = SKProductsRequest(productIdentifiers: productIDs)
 
         // This is required because we inherit from NSObject.

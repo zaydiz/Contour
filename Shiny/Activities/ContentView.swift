@@ -12,7 +12,7 @@ struct ContentView: View {
     @SceneStorage("selectedView") var selectedView: String?
     @EnvironmentObject var dataController: DataController
 
-    private let newProjectActivity = "com.antonnovoselov.Shiny.newProject"
+    private let newProjectActivity = "com.antonnovoselov.Shiny2.newProject"
     
     var body: some View {
         TabView(selection: $selectedView) {
@@ -41,6 +41,12 @@ struct ContentView: View {
                 .tabItem {
                     Image(systemName: "rosette")
                     Text("Awards")
+                }
+            SharedProjectsView()
+                .tag(SharedProjectsView.tag)
+                .tabItem {
+                    Image(systemName: "person.3")
+                    Text("Community")
                 }
         } // TabView
         .onContinueUserActivity(CSSearchableItemActionType, perform: moveToHome)

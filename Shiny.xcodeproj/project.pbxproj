@@ -74,6 +74,11 @@
 		3ABDA007266A65CA00438772 /* ComplexWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABDA006266A65CA00438772 /* ComplexWidget.swift */; };
 		3ABDA008266A666D00438772 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABDA000266A651A00438772 /* DataProvider.swift */; };
 		3ABDA00A266A672100438772 /* DataController-StoreKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABDA009266A672100438772 /* DataController-StoreKit.swift */; };
+		3AF42C2E269EB46C00552E11 /* SharedProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF42C2D269EB46C00552E11 /* SharedProject.swift */; };
+		3AF42C30269EB48200552E11 /* SharedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF42C2F269EB48200552E11 /* SharedItem.swift */; };
+		3AF42C32269EB4EB00552E11 /* LoadStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF42C31269EB4EB00552E11 /* LoadStates.swift */; };
+		3AF42C35269EB57F00552E11 /* SharedProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF42C34269EB57F00552E11 /* SharedProjectsView.swift */; };
+		3AF42C37269EBD0E00552E11 /* SharedItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF42C36269EBD0E00552E11 /* SharedItemsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -187,6 +192,11 @@
 		3ABDA002266A653900438772 /* SimpleWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleWidget.swift; sourceTree = "<group>"; };
 		3ABDA006266A65CA00438772 /* ComplexWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexWidget.swift; sourceTree = "<group>"; };
 		3ABDA009266A672100438772 /* DataController-StoreKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataController-StoreKit.swift"; sourceTree = "<group>"; };
+		3AF42C2D269EB46C00552E11 /* SharedProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedProject.swift; sourceTree = "<group>"; };
+		3AF42C2F269EB48200552E11 /* SharedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedItem.swift; sourceTree = "<group>"; };
+		3AF42C31269EB4EB00552E11 /* LoadStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadStates.swift; sourceTree = "<group>"; };
+		3AF42C34269EB57F00552E11 /* SharedProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedProjectsView.swift; sourceTree = "<group>"; };
+		3AF42C36269EBD0E00552E11 /* SharedItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedItemsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -347,6 +357,7 @@
 				3AB5BA53262E0112009DF450 /* Projects */,
 				3AB5BA54262E0117009DF450 /* Awards */,
 				3A7AEB1B2663F7EC00076D85 /* Unlock */,
+				3AF42C33269EB51800552E11 /* Community */,
 			);
 			path = Activities;
 			sourceTree = "<group>";
@@ -433,6 +444,18 @@
 				3ABD9FD8266A4B9700438772 /* Info.plist */,
 			);
 			path = ShinyWidget;
+			sourceTree = "<group>";
+		};
+		3AF42C33269EB51800552E11 /* Community */ = {
+			isa = PBXGroup;
+			children = (
+				3AF42C2D269EB46C00552E11 /* SharedProject.swift */,
+				3AF42C31269EB4EB00552E11 /* LoadStates.swift */,
+				3AF42C2F269EB48200552E11 /* SharedItem.swift */,
+				3AF42C34269EB57F00552E11 /* SharedProjectsView.swift */,
+				3AF42C36269EBD0E00552E11 /* SharedItemsView.swift */,
+			);
+			path = Community;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -630,6 +653,7 @@
 				3A7AEB1A2663F54800076D85 /* UnlockView.swift in Sources */,
 				3ABD9FE8266A4D6A00438772 /* DataController-Awards.swift in Sources */,
 				3A3D471D25D98B8C00406D81 /* ProjectHeaderView.swift in Sources */,
+				3AF42C30269EB48200552E11 /* SharedItem.swift in Sources */,
 				3A6B2ACD2665466D00FD1DB3 /* AppDelegate.swift in Sources */,
 				3A6B2ACF2665467400FD1DB3 /* SceneDelegate.swift in Sources */,
 				3A1F265825DF9DE3000B2842 /* Bundle-Decodable.swift in Sources */,
@@ -649,7 +673,11 @@
 				3AB156E525D2AB7B0025CFFA /* Main.xcdatamodeld in Sources */,
 				3A3D472125D9A37100406D81 /* EditProjectView.swift in Sources */,
 				3AB5BA8D262F37FB009DF450 /* ItemRowViewModel.swift in Sources */,
+				3AF42C35269EB57F00552E11 /* SharedProjectsView.swift in Sources */,
+				3AF42C2E269EB46C00552E11 /* SharedProject.swift in Sources */,
 				3A202E042618D08000CE92D4 /* ProjectSummaryView.swift in Sources */,
+				3AF42C37269EBD0E00552E11 /* SharedItemsView.swift in Sources */,
+				3AF42C32269EB4EB00552E11 /* LoadStates.swift in Sources */,
 				3AB156E725D2AE5F0025CFFA /* DataController.swift in Sources */,
 				3A0C462C25D2FF68009C7FBC /* ItemRowView.swift in Sources */,
 				3AB156D725D2A7840025CFFA /* ContentView.swift in Sources */,
@@ -885,7 +913,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.antonnovoselov.Shiny;
+				PRODUCT_BUNDLE_IDENTIFIER = com.antonnovoselov.Shiny2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -909,7 +937,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.antonnovoselov.Shiny;
+				PRODUCT_BUNDLE_IDENTIFIER = com.antonnovoselov.Shiny2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1008,7 +1036,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.antonnovoselov.Shiny.ShinyWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.antonnovoselov.Shiny2.ShinyWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -1030,7 +1058,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.antonnovoselov.Shiny.ShinyWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.antonnovoselov.Shiny2.ShinyWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
