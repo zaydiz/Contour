@@ -9,13 +9,16 @@ import SwiftUI
 
 @main
 struct ShinyApp: App {
-
     @StateObject var dataController: DataController
     @StateObject var unlockManager: UnlockManager
-    
+
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
 
     init() {
+        #if targetEnvironment(simulator)
+        UserDefaults.standard.set("AntonNovoselov", forKey: "username")
+        #endif
+
         let dataController = DataController()
         let unlockManager = UnlockManager(dataController: dataController)
 

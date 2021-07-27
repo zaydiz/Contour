@@ -90,7 +90,7 @@ extension Project {
             return first.itemCreationDate < second.itemCreationDate
         }
     }
-    
+
     var completionAmount: Double {
         let originalItems = items?.allObjects as? [Item] ?? []
         guard originalItems.isEmpty == false else { return 0 }
@@ -98,14 +98,14 @@ extension Project {
         let completedItems = originalItems.filter(\.completed)
         return Double(completedItems.count) / Double(originalItems.count)
     }
-    
-    func prepareCloudRecords() -> [CKRecord] {
+
+    func prepareCloudRecords(owner: String) -> [CKRecord] {
         let parentName = objectID.uriRepresentation().absoluteString
         let parentID = CKRecord.ID(recordName: parentName)
         let parent = CKRecord(recordType: "Project", recordID: parentID)
         parent["title"] = projectTitle
         parent["detail"] = projectDetail
-        parent["owner"] = "AntonNovoselov"
+        parent["owner"] = owner
         parent["closed"] = closed
 
         var records = projectItemsDefaultSorted.map { item -> CKRecord in
