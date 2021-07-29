@@ -74,6 +74,7 @@
 		3ABDA007266A65CA00438772 /* ComplexWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABDA006266A65CA00438772 /* ComplexWidget.swift */; };
 		3ABDA008266A666D00438772 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABDA000266A651A00438772 /* DataProvider.swift */; };
 		3ABDA00A266A672100438772 /* DataController-StoreKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABDA009266A672100438772 /* DataController-StoreKit.swift */; };
+		3AC8F6A626B2D4D300B9FE8A /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC8F6A526B2D4D300B9FE8A /* ChatMessage.swift */; };
 		3AE84F2626AFE12700C2C23C /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE84F2526AFE12700C2C23C /* SignInView.swift */; };
 		3AF42C2E269EB46C00552E11 /* SharedProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF42C2D269EB46C00552E11 /* SharedProject.swift */; };
 		3AF42C30269EB48200552E11 /* SharedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF42C2F269EB48200552E11 /* SharedItem.swift */; };
@@ -193,6 +194,7 @@
 		3ABDA002266A653900438772 /* SimpleWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleWidget.swift; sourceTree = "<group>"; };
 		3ABDA006266A65CA00438772 /* ComplexWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexWidget.swift; sourceTree = "<group>"; };
 		3ABDA009266A672100438772 /* DataController-StoreKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataController-StoreKit.swift"; sourceTree = "<group>"; };
+		3AC8F6A526B2D4D300B9FE8A /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
 		3AE84F2526AFE12700C2C23C /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		3AF42C2D269EB46C00552E11 /* SharedProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedProject.swift; sourceTree = "<group>"; };
 		3AF42C2F269EB48200552E11 /* SharedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedItem.swift; sourceTree = "<group>"; };
@@ -456,6 +458,7 @@
 				3AF42C31269EB4EB00552E11 /* LoadStates.swift */,
 				3AF42C2F269EB48200552E11 /* SharedItem.swift */,
 				3AF42C34269EB57F00552E11 /* SharedProjectsView.swift */,
+				3AC8F6A526B2D4D300B9FE8A /* ChatMessage.swift */,
 				3AF42C36269EBD0E00552E11 /* SharedItemsView.swift */,
 			);
 			path = Community;
@@ -672,6 +675,7 @@
 				3A7AEB182663F4F900076D85 /* ProductView.swift in Sources */,
 				3A1F265E25DF9EE6000B2842 /* AwardsView.swift in Sources */,
 				3A8585AC25E2F3CC004E901A /* Color+Additions.swift in Sources */,
+				3AC8F6A626B2D4D300B9FE8A /* ChatMessage.swift in Sources */,
 				3ABDA00A266A672100438772 /* DataController-StoreKit.swift in Sources */,
 				3A7AEB162663F17100076D85 /* PurchaseButton.swift in Sources */,
 				3AB156E525D2AB7B0025CFFA /* Main.xcdatamodeld in Sources */,
