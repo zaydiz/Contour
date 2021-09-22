@@ -76,6 +76,8 @@
 		3ABDA00A266A672100438772 /* DataController-StoreKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABDA009266A672100438772 /* DataController-StoreKit.swift */; };
 		3AC8F6A626B2D4D300B9FE8A /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC8F6A526B2D4D300B9FE8A /* ChatMessage.swift */; };
 		3AE84F2626AFE12700C2C23C /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE84F2526AFE12700C2C23C /* SignInView.swift */; };
+		3AEF1F4326FB2764008153AF /* Error-CloudKitMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF1F4226FB2764008153AF /* Error-CloudKitMessage.swift */; };
+		3AEF1F4526FB29EC008153AF /* CloudError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF1F4426FB29EC008153AF /* CloudError.swift */; };
 		3AF42C2E269EB46C00552E11 /* SharedProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF42C2D269EB46C00552E11 /* SharedProject.swift */; };
 		3AF42C30269EB48200552E11 /* SharedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF42C2F269EB48200552E11 /* SharedItem.swift */; };
 		3AF42C32269EB4EB00552E11 /* LoadStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF42C31269EB4EB00552E11 /* LoadStates.swift */; };
@@ -196,6 +198,8 @@
 		3ABDA009266A672100438772 /* DataController-StoreKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataController-StoreKit.swift"; sourceTree = "<group>"; };
 		3AC8F6A526B2D4D300B9FE8A /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
 		3AE84F2526AFE12700C2C23C /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		3AEF1F4226FB2764008153AF /* Error-CloudKitMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error-CloudKitMessage.swift"; sourceTree = "<group>"; };
+		3AEF1F4426FB29EC008153AF /* CloudError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudError.swift; sourceTree = "<group>"; };
 		3AF42C2D269EB46C00552E11 /* SharedProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedProject.swift; sourceTree = "<group>"; };
 		3AF42C2F269EB48200552E11 /* SharedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedItem.swift; sourceTree = "<group>"; };
 		3AF42C31269EB4EB00552E11 /* LoadStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadStates.swift; sourceTree = "<group>"; };
@@ -253,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				3A7AEB132663F10F00076D85 /* SKProduct-LocalizedPrice.swift */,
+				3AEF1F4226FB2764008153AF /* Error-CloudKitMessage.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -356,6 +361,7 @@
 		3AB5BA4F262DB03B009DF450 /* Activities */ = {
 			isa = PBXGroup;
 			children = (
+				3AEF1F4426FB29EC008153AF /* CloudError.swift */,
 				3AB156D625D2A7840025CFFA /* ContentView.swift */,
 				3AB5BA52262E0109009DF450 /* Home */,
 				3AB5BA53262E0112009DF450 /* Projects */,
@@ -674,11 +680,13 @@
 				3A7AEB142663F10F00076D85 /* SKProduct-LocalizedPrice.swift in Sources */,
 				3A7AEB182663F4F900076D85 /* ProductView.swift in Sources */,
 				3A1F265E25DF9EE6000B2842 /* AwardsView.swift in Sources */,
+				3AEF1F4526FB29EC008153AF /* CloudError.swift in Sources */,
 				3A8585AC25E2F3CC004E901A /* Color+Additions.swift in Sources */,
 				3AC8F6A626B2D4D300B9FE8A /* ChatMessage.swift in Sources */,
 				3ABDA00A266A672100438772 /* DataController-StoreKit.swift in Sources */,
 				3A7AEB162663F17100076D85 /* PurchaseButton.swift in Sources */,
 				3AB156E525D2AB7B0025CFFA /* Main.xcdatamodeld in Sources */,
+				3AEF1F4326FB2764008153AF /* Error-CloudKitMessage.swift in Sources */,
 				3A3D472125D9A37100406D81 /* EditProjectView.swift in Sources */,
 				3AB5BA8D262F37FB009DF450 /* ItemRowViewModel.swift in Sources */,
 				3AF42C35269EB57F00552E11 /* SharedProjectsView.swift in Sources */,
