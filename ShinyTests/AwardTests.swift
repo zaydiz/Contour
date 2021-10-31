@@ -13,6 +13,10 @@ import CoreData
 class AwardTests: BaseTestCase {
 
     let awards = Award.allAwards
+    
+    func prepareValuesForTests() -> [Int] {
+        return [1, 10, 20, 50, 100, 250, 500, 1000]
+    }
 
     func testAwardIDMatchesName() {
         for award in awards {
@@ -92,9 +96,31 @@ class AwardTests: BaseTestCase {
             dataController.deleteAll()
         }
     }
+    
+    func testCompletingItemsFailed() {
+        let values = self.prepareValuesForTests()
+        
+        
+        for (count, value) in values.enumerated() {
+            for _ in 0..<value {
+                let item = Item(context: managedObjectContext)
+                item.completed = true
+            }
+
+            let matches = awards.filter { award in
+                award.criterion == "notComplete" && dataController.hasEarned(award: award)
+            }
+
+            XCTAssertEqual(matches.count, count + 1, "Completing \(value) items should unlock \(count + 1) awards.")
+
+            dataController.deleteAll()
+        }
+    }
+    
+    
 
     func testCompletingItems() {
-        let values = [1, 10, 20, 50, 100, 250, 500, 1000]
+        let values = self.prepareValuesForTests()
 
         for (count, value) in values.enumerated() {
             for _ in 0..<value {
